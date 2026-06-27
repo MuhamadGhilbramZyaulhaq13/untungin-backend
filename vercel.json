@@ -18,6 +18,10 @@
     {
       "src": "/api/auth/me",
       "dest": "/api/auth/me.js"
+    },
+    {
+      "src": "/api/user/profile",
+      "dest": "/api/user/profile.js"
     }
   ]
 }
