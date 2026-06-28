@@ -7,11 +7,13 @@
     }
   ],
   "routes": [
-    { "src": "/api/auth/register",   "dest": "/api/auth/register.js" },
-    { "src": "/api/auth/login",      "dest": "/api/auth/login.js" },
-    { "src": "/api/auth/me",         "dest": "/api/auth/me.js" },
-    { "src": "/api/user/profile",    "dest": "/api/user/profile.js" },
-    { "src": "/api/products",        "dest": "/api/product/index.js" },
-    { "src": "/api/products/([^/]+)","dest": "/api/product/[id].js?id=$1" }
+    { "src": "/api/auth/register",    "dest": "/api/auth/register.js" },
+    { "src": "/api/auth/login",       "dest": "/api/auth/login.js" },
+    { "src": "/api/auth/me",          "dest": "/api/auth/me.js" },
+    { "src": "/api/user/profile",     "dest": "/api/user/profile.js" },
+    { "src": "/api/products",         "dest": "/api/product/index.js" },
+    { "src": "/api/products/([^/]+)", "dest": "/api/product/[id].js?id=$1" },
+    { "src": "/api/orders",           "dest": "/api/orders/index.js" },
+    { "src": "/api/orders/([^/]+)",   "dest": "/api/orders/[id].js?id=$1" }
   ]
 }
