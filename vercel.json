@@ -1,11 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
+  "builds": [{ "src": "api/**/*.js", "use": "@vercel/node" }],
   "routes": [
     { "src": "/api/auth/register",    "dest": "/api/auth/register.js" },
     { "src": "/api/auth/login",       "dest": "/api/auth/login.js" },
@@ -14,6 +9,8 @@
     { "src": "/api/products",         "dest": "/api/product/index.js" },
     { "src": "/api/products/([^/]+)", "dest": "/api/product/[id].js?id=$1" },
     { "src": "/api/orders",           "dest": "/api/orders/index.js" },
-    { "src": "/api/orders/([^/]+)",   "dest": "/api/orders/[id].js?id=$1" }
+    { "src": "/api/orders/([^/]+)",   "dest": "/api/orders/[id].js?id=$1" },
+    { "src": "/api/admin/stats",      "dest": "/api/admin/stats.js" },
+    { "src": "/api/admin/orders",     "dest": "/api/admin/orders.js" }
   ]
 }
